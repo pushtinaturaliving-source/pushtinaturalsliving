@@ -1,171 +1,250 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pushti Naturals</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pushti Naturals — Wellness Rooted in Tradition</title>
+<meta name="description" content="Pushti Naturals brings unpolished millets, millet vermicelli and stone-ground flours to your kitchen — natural, minimally processed foods rooted in tradition." />
+<meta name="theme-color" content="#F4E9D6" />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f2;
-      color: #2e2e2e;
-    }
+<!-- Open Graph -->
+<meta property="og:title" content="Pushti Naturals — Wellness Rooted in Tradition" />
+<meta property="og:description" content="Unpolished millets, millet vermicelli and stone-ground flours, grown honestly and processed gently." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pushtinaturalsliving.com/" />
+<meta property="og:image" content="assets/logo.jpg" />
 
-    header {
-      background: #2f5d50;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+<link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+<link rel="canonical" href="https://pushtinaturalsliving.com/" />
 
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: url('https://images.unsplash.com/photo-1505576399279-565b52d4ac71') center/cover;
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #f4a261;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    .products {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: #2f5d50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 28px;
-      }
-
-      .products {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+<link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Pushti Naturals</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/logo.jpg" alt="Pushti Naturals logo" />
+      Pushti Naturals
+    </a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+    </div>
+  </nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Pure. Natural. Nourishing.</h2>
-    <p>Wholesome millet-based foods made for healthy living.</p>
-    <a href="#products" class="btn">Explore Products</a>
-  </section>
+<main>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <h3>About Us</h3>
-    <p>
-      Pushti Naturals is dedicated to bringing traditional, nutritious, and clean millet-based foods
-      back into modern lifestyles. We focus on health, simplicity, and natural ingredients.
-    </p>
-  </section>
-
-  <!-- Products -->
-  <section class="section" id="products">
-    <h3>Our Products</h3>
-    <div class="products">
-      <div class="card">
-        <h4>Millet Flour</h4>
-        <p>Stone-ground, chemical-free flour for daily cooking.</p>
+  <!-- Hero -->
+  <section class="hero container">
+    <div class="hero__grid">
+      <div>
+        <span class="hero__eyebrow eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c0 6-3 8-3 13a3 3 0 0 0 6 0c0-5-3-7-3-13Z"/><path d="M12 15V22"/><path d="M8 9c-2 1-3 3-3 5"/><path d="M16 9c2 1 3 3 3 5"/></svg>
+          Unpolished. Unhurried. Untouched by shortcuts.
+        </span>
+        <h1>Wellness, <em>rooted</em><br />in tradition.</h1>
+        <p class="lede">
+          Pushti Naturals brings back the grains our grandmothers trusted —
+          unpolished millets, slow-milled flours and millet vermicelli,
+          grown honestly and processed gently, so nothing good gets left behind.
+        </p>
+        <div class="hero__actions">
+          <a href="products.html" class="btn btn--primary">Shop the Range</a>
+          <a href="contact.html" class="btn btn--ghost">Talk to Us</a>
+        </div>
       </div>
-
-      <div class="card">
-        <h4>Instant Mixes</h4>
-        <p>Healthy breakfast and snack mixes made from ancient grains.</p>
-      </div>
-
-      <div class="card">
-        <h4>Traditional Recipes</h4>
-        <p>Ready-to-follow healthy recipes for modern kitchens.</p>
+      <div class="hero__art">
+        <div class="grain-ring">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--clr-rust)">
+            <path d="M50 10c0 22-10 28-10 46a10 10 0 0 0 20 0c0-18-10-24-10-46Z"/>
+            <path d="M30 32c-8 3-12 10-12 18" />
+            <path d="M70 32c8 3 12 10 12 18" />
+            <path d="M50 56V90" stroke="#707A3E"/>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: hello@pushtinaturals.com</p>
-    <p>Follow us on Instagram for recipes and updates.</p>
+  <!-- Intro -->
+  <section class="section container reveal">
+    <div class="split">
+      <div>
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+          Our Promise
+        </span>
+        <h2>Food the way it was meant to be eaten.</h2>
+      </div>
+      <div>
+        <p>
+          Most millets on the shelf today are polished until little of their
+          fibre and character remains. We do the opposite. Every grain that
+          leaves our kitchen keeps its bran, its texture and its slow, steady
+          energy — because that's the whole point of eating naturally.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Pushti Naturals. All rights reserved.</p>
-  </footer>
+  <!-- Featured products -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 1 0 16 0"/><path d="M4 12a8 8 0 1 1 16 0"/><path d="M12 4v16"/></svg>
+          What We Grow &amp; Grind
+        </span>
+        <h2>Featured products</h2>
+        <p>A small, honest range — five unpolished millets, one comforting vermicelli, and a flour milled fresh to order.</p>
+      </div>
 
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c0 6-3 8-3 13a3 3 0 0 0 6 0c0-5-3-7-3-13Z"/><path d="M8 9c-2 1-3 3-3 5"/><path d="M16 9c2 1 3 3 3 5"/></svg>
+          </div>
+          <h3>Unpolished Millets</h3>
+          <p>Finger, barnyard, foxtail, kodo and little millet — each left whole, with its bran and germ intact.</p>
+          <div class="card__tag-row">
+            <span class="tag">Gluten-Free</span>
+            <span class="tag">High Fibre</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6c4 0 4 4 8 4s4-4 8-4"/><path d="M4 12c4 0 4 4 8 4s4-4 8-4"/><path d="M4 18c4 0 4 4 8 4s4-4 8-4" transform="translate(0,-4)"/></svg>
+          </div>
+          <h3>Millet Vermicelli</h3>
+          <p>The comfort of everyday vermicelli, remade from millet — light, quick to cook, kind to digestion.</p>
+          <div class="card__tag-row">
+            <span class="tag">Quick Cook</span>
+            <span class="tag">No Refined Flour</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h12l-1 14a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4L6 3Z"/><path d="M9 8h6"/></svg>
+          </div>
+          <h3>Stone-Milled Flour</h3>
+          <p>Millets ground slow and fresh, keeping the nutrition intact instead of lost to heat and time.</p>
+          <div class="card__tag-row">
+            <span class="tag">Freshly Milled</span>
+            <span class="tag">No Additives</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="center" style="margin-top: 2.5rem;">
+        <a href="products.html" class="btn btn--ghost">View Full Range</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why millets teaser -->
+  <section class="section container">
+    <div class="wheat-divider" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c0 6-3 8-3 13a3 3 0 0 0 6 0c0-5-3-7-3-13Z"/><path d="M12 15V22"/></svg>
+    </div>
+    <div class="section-head center reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> Why It Matters</span>
+      <h2>Small grains, old wisdom.</h2>
+      <p>Millets fed generations before refined rice and wheat took over our plates. We're simply bringing that wisdom back.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.5-9 9-9 9Z"/></svg></div>
+        <h3>Gentle on Digestion</h3>
+        <p>Naturally fibre-rich and easy on the stomach, the way whole grains have always been.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z"/></svg></div>
+        <h3>Nothing Hidden</h3>
+        <p>No polishing, no bleaching, no shortcuts — just the grain, as it grew.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>Rooted in Tradition</h3>
+        <p>Recipes and grains that have quietly nourished homes for generations.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container" style="padding-bottom: clamp(3.5rem, 6vw, 6.5rem);">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Ready to bring millets home?</h2>
+        <p>Browse the full range or write to us — we're happy to help you get started.</p>
+      </div>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="products.html" class="btn btn--on-dark">Shop the Range</a>
+        <a href="contact.html" class="btn" style="background:var(--clr-paper); color:var(--clr-brown-deep);">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="assets/logo.jpg" alt="Pushti Naturals logo" />
+          Pushti Naturals
+        </div>
+        <p>Wellness rooted in tradition — unpolished millets, millet vermicelli and stone-milled flours from Kuala Lumpur.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="benefits.html">Benefits of Millets</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html#millets">Unpolished Millets</a></li>
+          <li><a href="products.html#vermicelli">Millet Vermicelli</a></li>
+          <li><a href="products.html#flour">Millet Flour</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:pushtinaturaliving@gmail.com">pushtinaturaliving@gmail.com</a></li>
+          <li>Kuala Lumpur, Malaysia</li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span data-year>2026</span> Pushti Naturals. All rights reserved.</span>
+      <span>pushtinaturalsliving.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
