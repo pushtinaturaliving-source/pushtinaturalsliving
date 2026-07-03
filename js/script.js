@@ -75,20 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
       status.dataset.state = "";
 
       try {
-        const response = await fetch(form.action, {
+        await fetch(form.action, {
           method: "POST",
+          mode: "no-cors",
           body: new FormData(form),
-          headers: { Accept: "application/json" },
         });
-
-        if (response.ok) {
-          status.textContent = `Thanks, ${name} — your message is on its way. We'll get back to you soon.`;
-          status.dataset.state = "success";
-          form.reset();
-        } else {
-          status.textContent = "Something went wrong sending that. Please try again or email us directly.";
-          status.dataset.state = "error";
-        }
+      
+        status.textContent = `Thanks, ${name} — your message is on its way. We'll get back to you soon.`;
+        status.dataset.state = "success";
+        form.reset();
       } catch (err) {
         status.textContent = "Couldn't connect right now. Please try again or email us directly.";
         status.dataset.state = "error";
