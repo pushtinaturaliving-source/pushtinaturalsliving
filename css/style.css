@@ -416,7 +416,7 @@ p { max-width: 62ch; }
 }
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* ---- CTA band ------------------------------------------------------------ */
